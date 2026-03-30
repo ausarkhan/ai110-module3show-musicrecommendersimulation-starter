@@ -17,7 +17,7 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Explain your design in plain language.
+A content-based music recommender compares a user profile to each song's features and gives every song a score based on how closely it matches the user's preferences. In this project, the user provides preferred genre, mood, and energy, and each song has those same attributes in the dataset. The system adds weighted points for matches, such as a larger bonus for genre, a smaller bonus for mood, and an energy similarity value computed from how close the song's energy is to the user's target energy. After every song is scored, the songs are ranked from highest to lowest score, and the top results are returned as recommendations.
 
 Some prompts to answer:
 

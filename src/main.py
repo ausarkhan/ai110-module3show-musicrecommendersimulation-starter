@@ -22,11 +22,12 @@ def main() -> None:
 
     print("\nTop recommendations:\n")
     for rec in recommendations:
-        # You decide the structure of each returned item.
-        # A common pattern is: (song, score, explanation)
-        song, score, explanation = rec
-        print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Because: {explanation}")
+        song, score, reasons = rec
+        print(f"Song Title: {song['title']}")
+        print(f"Score: {score:.2f}")
+        print("Reasons:")
+        for reason in reasons:
+            print(f"- {reason}")
         print()
 
 
